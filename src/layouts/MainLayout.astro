@@ -1,0 +1,47 @@
+---
+import '@fontsource-variable/libre-bodoni';
+import '@fontsource/titillium-web';
+import '@fontsource-variable/open-sans';
+import Drawer from '../components/Navigation/Drawer';
+
+interface Props {
+  title: string;
+  meta: {
+    description: string;
+  };
+}
+
+const { title, meta } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+    <meta name="description" content={meta.description} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<main class="bg-black min-h-screen">
+			<Drawer client:visible />
+			<slot />
+    </main>
+	</body>
+</html>
+
+<style>
+	:global(body) {
+		font-family: 'Open Sans', sans-serif;
+	}
+	:global(h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6) {
+		font-family: 'Titillium Web', sans-serif;
+		font-size: initial;
+	}
+</style>
