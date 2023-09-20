@@ -1,0 +1,22 @@
+---
+interface Props {
+  imagePath: string;
+  title: string;
+  description: string;
+}
+
+const { imagePath, title, description } = Astro.props;
+---
+<section class="relative">
+  <div class="w-full h-screen absolute top-0 left-0">
+    <img src={imagePath} alt="Hero" class="w-full h-full object-cover" />
+  </div>
+  <section class="min-h-screen grid w-full place-items-center">
+    <section class="flex items-center justify-center w-full h-full">
+      <section class="max-w-md text-white text-center z-10 bg-opacity-60 bg-black rounded-xl p-4">
+        <h1 class="text-5xl font-bold">{title}</h1>
+        <p class="py-7">{description}</p>
+      </section>
+    </section>
+  </section>
+</section>
