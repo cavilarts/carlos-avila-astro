@@ -8,6 +8,7 @@ import MainLayout from '../layouts/MainLayout.astro';
 import Hero from '../components/Hero/Hero.astro';
 import Overview from '../components/Overview/Overview.astro';
 import FlipCard from '../components/FlipCard/FlipCard';
+import WorkTimeline from '../components/Timeline/WorkTimeline';
 
 ---
 <MainLayout title='Carlos Avila Web Developer' meta={{
@@ -29,5 +30,39 @@ import FlipCard from '../components/FlipCard/FlipCard';
 					<BiLogoCss3 />
 			</FlipCard>
 		</div>
+	</Overview>
+	<Overview title="Work Experience" subtitle="WHAT I'VE DONE SO FAR" description=''>
+		<WorkTimeline client:visible />
+	</Overview>
+	<Overview title='My Prefferred technology' subtitle='Tools that I love to use' description='I have experience with multiple web frameworks, database engines, styling tools, and more.'>
+		<section class="flex mt-4 gap-4 flex-wrap justify-center">
+			<div class="bg-white shadow-xl rounded-full p-2 w-14">
+				<img src="/images/typescript.webp" alt="typescript" class="bg-cover" />
+			</div>
+			<div class="bg-white shadow-xl rounded-full p-2 w-14">
+				<img src="/images/webpack.webp" alt="webpack" />
+			</div>
+			<div class="bg-white shadow-xl rounded-full p-2 w-14">
+				<img src="/images/svelte.webp" alt="svelte" />
+			</div>
+			<div class="bg-white shadow-xl rounded-full p-2 w-14">
+				<img src="/images/mongo.webp" alt="mongodb" />
+			</div>
+			<div class="bg-white shadow-xl rounded-full p-2 w-14">
+				<img src="/images/html5.webp" alt="express" />
+			</div>
+			<div class="bg-white shadow-xl rounded-full p-2 w-14">
+				<img src="/images/css3.webp" alt="css3" />
+			</div>
+			<div class="bg-white shadow-xl rounded-full p-2 w-14">
+				<img src="/images/javascript.webp" alt="javascript" />
+			</div>
+			<div class="bg-white shadow-xl rounded-full p-2 w-14">
+				<img src="/images/nextjs.webp" alt="nextjs" />
+			</div>
+			<div class="bg-white shadow-xl rounded-full p-2 w-14">
+				<img src="/images/redux.webp" alt="redux" />
+			</div>
+		</section>
 	</Overview>
 </MainLayout>
