@@ -10,7 +10,7 @@ export default function Drawer() {
   }
 
   return (
-    <section className="relative grid auto-cols-[auto max-content] w-full">
+    <section className="relative grid auto-cols-[auto max-content] w-full z-20">
       <section className="col-start-1 row-start-1 flex flex-col">
         <Navigation handleOpen={handleOpen} />
       </section>

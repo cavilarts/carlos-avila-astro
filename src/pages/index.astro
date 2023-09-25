@@ -1,10 +1,33 @@
 ---
+import { BiLogoReact } from 'react-icons/bi';
+import { BiLogoNodejs } from 'react-icons/bi';
+import { BiLogoCss3 } from 'react-icons/bi';
+import { SiAstro } from 'react-icons/si';
+
 import MainLayout from '../layouts/MainLayout.astro';
 import Hero from '../components/Hero/Hero.astro';
+import Overview from '../components/Overview/Overview.astro';
+import FlipCard from '../components/FlipCard/FlipCard';
 
 ---
 <MainLayout title='Carlos Avila Web Developer' meta={{
 	description: "Unlock the Potential of Your Projects with a Top-Tier Web Developer. I'm Carlos Avila, a software developer in Germany, skilled in React, Node.js, and Firebase. With expertise in Svelte, Vue, MongoDB, Express, Tailwind, and Bootstrap, I'm your go-to partner for web development excellence. Let's bring your ideas to life."
 }}>
 	<Hero imagePath='/images/joshua-reddekopp-GkFQEOubrCo-unsplash.avif' title='Hello my Name is Carlos Avila' description='I am a software developer currently based in Germany I have worked with many technologies, but my main focus is on React, NodeJs and Firebase. I also have experience with other technologies like Svelte, Vue, MongoDB, Express, Tailwind, Bootstrap, etc.' />
+	<Overview title="Overview" subtitle="INTRODUCTION" description="I am a Frontend Engineer & technology enthusiast! Throughout my career, I have been driven by my passion for technology and my appreciation for connecting with individuals and community. I have 10 years of experience specializing in web development. I am well-equipped to take on challenging projects and drive exceptional results.">
+		<div class="mt-10 flex flex-wrap gap-8 md:justify-between">
+			<FlipCard title='React' description='In my career, I have architected, created, maintained, and expanded React applications.'>
+					<BiLogoReact />
+			</FlipCard>
+			<FlipCard title='NodeJs' description='NodeJS in my opinion is the faster and easy way to create and maintain backend code.'>
+					<BiLogoNodejs />
+			</FlipCard>
+			<FlipCard title='Astro' description='Astro is the best modern framework, the one that I enjoy the most and the perfect balance for web performance.'>
+					<SiAstro />
+			</FlipCard>
+			<FlipCard title='CSS' description='No matter the way, either using tailwind or another option to style and create a grat look and feel I can perform the best and create awesome interfaces.'>
+					<BiLogoCss3 />
+			</FlipCard>
+		</div>
+	</Overview>
 </MainLayout>
