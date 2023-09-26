@@ -1,0 +1,19 @@
+---
+import WorkCard from "../components/Card/WorkCard.astro";
+import Overview from "../components/Overview/Overview.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout title="Projects" meta={{
+  description: "I have collaborated to create better products, brought ideas, and actively participated in the projects you will see below. Additionally, some others were created and are currently maintained by me.",
+}}>
+  <Overview title="Projects" subtitle="Some of my work" description="I have collaborated to create better products, brought ideas, and actively participated in the projects you will see below. Additionally, some others were created and are currently maintained by me." >
+    <section class="flex flex-wrap gap-0 items-stretch md:justify-between justify-center">
+      <WorkCard url="https://fantastic-licorice-70b0f2.netlify.app/" title="Astro Movies" description="This project was created using the Movie Database (TMDb) API and is designed to display the most recent movies. It has the capability to filter and provide page navigation." image="/images/AstroMovies.webp" tech={['Astro', "React", 'Tailwind']} />
+      <WorkCard url="https://www.sellwhenever.com/" title="SellWhenever" description="SellWhenever is a platform that allows home owners to sell their properties in a fast and easy way." image="/images/Sellwhenever.webp" tech={['NextJS', "Typescript", 'React', 'Redux', "Styled Components", "Material UI", "Testing Library"]} />
+      <WorkCard url="https://usetmx.com/" title="TMX News" description="TMX News is a B2B platform that allows users to upload and share news with massive news corporations." image="/images/tmx.webp" tech={["Typescript", 'React', 'Redux', "Styled Components", "Semantic UI"]} />
+      <WorkCard url="https://www.southwest.com/" title="Southwest Airlines" description="Southwest Airlines is a platform that allows users to book flights, hotels and cars." image="/images/southwest.webp" tech={["Typescript", 'React',  "CSS", "Semantic UI"]} />
+      <WorkCard url="https://www.nissanusa.com/shopping-tools/search-inventory" title="Nissan Car Inventory" description="Nissan Car Inventory is a platform that allows users to search for cars in a specific location with specific characteristics." image="/images/nissan-inventory.webp" tech={["Backbone", 'Marionette',  "Jasmine", "Sass"]} />
+    </section>
+  </Overview>
+</MainLayout>
