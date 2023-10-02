@@ -24,11 +24,11 @@ export default function Menu({ handleOpen }: MenuProps = {}) {
         <a href="/projects">Projects</a>
       </li>
       <li>
-        <a href="#about">About</a>
+        <a href="/about">About</a>
       </li>
-      <li>
+      {/* <li>
         <a href="/blog">Blog</a>
-      </li>
+      </li> */}
     </>
   );
 }
