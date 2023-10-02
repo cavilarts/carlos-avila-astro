@@ -12,5 +12,5 @@ export default defineConfig({
       noExternal: ["react-icons"],
     },
   },
-  output: "server",
+  output: "hybrid",
 });
