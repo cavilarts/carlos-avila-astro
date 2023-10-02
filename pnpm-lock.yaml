@@ -42,7 +42,7 @@ dependencies:
     specifier: ^4.11.0
     version: 4.11.0(react@18.2.0)
   react-vertical-timeline-component:
-    specifier: ^3.6.0
+    specifier: ^3.5.2
     version: 3.6.0(react@18.2.0)
   tailwindcss:
     specifier: ^3.0.24
